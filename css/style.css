@@ -1,3 +1,45 @@
 .bi-lg {
   font-size: 35px;
 }
+:root {
+  --navbar-bg-color: rgb(246, 243, 243);
+  --header--bg: rgb(251, 252, 251);
+  --text--color: rgb(28, 27, 27);
+}
+:root[theme="dark"] {
+  --navbar-bg-color: rgb(45, 42, 42);
+  --header--bg: rgb(85, 85, 85);
+  --text--color: rgb(238, 234, 234);
+}
+
+body {
+  font-family: cursive;
+  color: var(--text--color);
+  
+}
+.navbar-nav .nav-link {
+  color: var(--text--color);
+}
+.navbar-brand {
+  color: var(--text--color);
+}
+
+html[theme="dark"] {
+}
+
+.header,
+nav,footer {
+  color: var(--text--color);
+  background-color: var(--header--bg);
+  border-radius: 5px;
+}
+
+body {
+  background-color: var(--navbar-bg-color);
+  color: var(--text--color);
+}
+
+input[type="button"] {
+  background-color: var(--navbar-bg-color);
+  color: var(--text--color);
+}
